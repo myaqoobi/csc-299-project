@@ -1,63 +1,22 @@
-# Task Manager - Prototype
+# Task 1 - Basic Task Manager
 
-**CSC299 Project - Task 1**
+**What is this?**  
+A simple command-line task manager that stores tasks in a JSON file. This is the prototype version.
 
-A simple command-line task management application that stores tasks in a JSON file.
+**What can it do?**
+- Add, list, search, update, and delete tasks
+- Filter by status or priority
+- View statistics
 
-## Features
-
-- Add tasks with title, description, and priority
-- List all tasks or filter by status/priority
-- Search tasks by keywords
-- Update task status
-- Delete tasks
-- View task statistics
-
-## Usage
-
-### Add a Task
+**How to use it:**
 ```bash
 python3 task_manager.py add "Buy groceries" "Get milk and bread" high
-```
-
-### List Tasks
-```bash
 python3 task_manager.py list
-python3 task_manager.py list pending
-python3 task_manager.py list completed high
-```
-
-### Search Tasks
-```bash
 python3 task_manager.py search "groceries"
-```
-
-### Update Task Status
-```bash
 python3 task_manager.py update 1 completed
-```
-
-### Delete Task
-```bash
-python3 task_manager.py delete 1
-```
-
-### View Statistics
-```bash
 python3 task_manager.py stats
 ```
 
-### Help
-```bash
-python3 task_manager.py help
-```
+**Requirements:** Python 3.7+ (no extra packages needed)
 
-## Requirements
-
-- Python 3.7+
-- No external dependencies required
-
-## Data Storage
-
-Tasks are stored in `tasks.json` in the same directory.
-
+Tasks are saved in `tasks.json` in this folder.
