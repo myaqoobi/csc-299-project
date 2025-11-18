@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Simple task manager application built with spec-driven development">
+    <title>Task Manager - Spec-Driven Development</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>📋 Task Manager</h1>
+            <p class="subtitle">Built with Spec-Driven Development</p>
+            <div class="stats" id="stats">
+                <span class="stat">
+                    <span class="stat-label">Total:</span>
+                    <span class="stat-value" id="stat-total">0</span>
+                </span>
+                <span class="stat">
+                    <span class="stat-label">Active:</span>
+                    <span class="stat-value" id="stat-active">0</span>
+                </span>
+                <span class="stat">
+                    <span class="stat-label">Completed:</span>
+                    <span class="stat-value" id="stat-completed">0</span>
+                </span>
+            </div>
+        </header>
+
+        <main class="main">
+            <!-- Task Input Form -->
+            <section class="task-form-section">
+                <form id="task-form" class="task-form">
+                    <div class="form-row">
+                        <input 
+                            type="text" 
+                            id="task-title" 
+                            class="task-input" 
+                            placeholder="What needs to be done?" 
+                            maxlength="500"
+                            required 
+                            autocomplete="off"
+                        >
+                        <button type="submit" class="btn btn-primary" id="submit-btn">
+                            <span id="submit-text">Add Task</span>
+                        </button>
+                    </div>
+
+                    <!-- Optional Details (expandable) -->
+                    <div class="form-details" id="form-details" style="display: none;">
+                        <textarea 
+                            id="task-description" 
+                            class="task-textarea" 
+                            placeholder="Add description (optional)" 
+                            rows="3"
+                            maxlength="2000"
+                        ></textarea>
+
+                        <div class="form-row">
+                            <select id="task-priority" class="task-select">
+                                <option value="medium">Priority: Medium</option>
+                                <option value="high">Priority: High</option>
+                                <option value="low">Priority: Low</option>
+                            </select>
+
+                            <input 
+                                type="date" 
+                                id="task-due-date" 
+                                class="task-date"
+                            >
+
+                            <input 
+                                type="text" 
+                                id="task-tags" 
+                                class="task-input" 
+                                placeholder="Tags (comma-separated)"
+                            >
+                        </div>
+                    </div>
+
+                    <button type="button" class="btn-text" id="toggle-details">
+                        + Add Details
+                    </button>
+
+                    <input type="hidden" id="task-id">
+                </form>
+            </section>
+
+            <!-- Filters -->
+            <section class="filters-section">
+                <div class="filters">
+                    <input 
+                        type="search" 
+                        id="search-input" 
+                        class="search-input" 
+                        placeholder="Search tasks..."
+                    >
+                    
+                    <select id="filter-status" class="filter-select">
+                        <option value="all">All Tasks</option>
+                        <option value="incomplete">Active Only</option>
+                        <option value="complete">Completed Only</option>
+                    </select>
+
+                    <select id="filter-priority" class="filter-select">
+                        <option value="all">All Priorities</option>
+                        <option value="high">High Priority</option>
+                        <option value="medium">Medium Priority</option>
+                        <option value="low">Low Priority</option>
+                    </select>
+
+                    <label class="filter-checkbox">
+                        <input type="checkbox" id="filter-overdue">
+                        <span>Overdue Only</span>
+                    </label>
+
+                    <button type="button" class="btn btn-secondary" id="clear-filters">
+                        Clear Filters
+                    </button>
+
+                    <button type="button" class="btn btn-secondary" id="export-btn">
+                        📥 Export
+                    </button>
+                </div>
+            </section>
+
+            <!-- Task List -->
+            <section class="task-list-section">
+                <div id="task-list" class="task-list">
+                    <!-- Tasks will be rendered here -->
+                </div>
+
+                <div id="empty-state" class="empty-state" style="display: none;">
+                    <p class="empty-icon">📝</p>
+                    <p class="empty-text">No tasks yet. Add your first task above!</p>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>CSC299 Project - Task 5: Spec-Driven Development with Spec Kit</p>
+        </footer>
+    </div>
+
+    <!-- Confirmation Dialog -->
+    <div id="confirm-dialog" class="modal" style="display: none;">
+        <div class="modal-content">
+            <h3 id="confirm-title">Confirm Action</h3>
+            <p id="confirm-message"></p>
+            <div class="modal-actions">
+                <button type="button" class="btn btn-secondary" id="confirm-cancel">Cancel</button>
+                <button type="button" class="btn btn-danger" id="confirm-ok">Confirm</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast" style="display: none;"></div>
+
+    <!-- Scripts -->
+    <script src="utils.js"></script>
+    <script src="storage.js"></script>
+    <script src="taskManager.js"></script>
+    <script src="ui.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
+
