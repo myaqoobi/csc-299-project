@@ -1,0 +1,18 @@
+# Video Demonstration URL
+
+**IMPORTANT**: Please upload your 6-8 minute YouTube video demonstrating your software and its development, then replace this placeholder with the actual URL.
+
+**Deadline**: 2025-11-24 at 1:30 PM
+
+**Placeholder URL** (replace with your actual video URL):
+https://www.youtube.com/watch?v=PLACEHOLDER
+
+---
+
+## Video Requirements Reminder:
+- 6-8 minutes in length
+- Demonstrate your software and its development
+- Show the progression from prototypes to final version
+- Include examples of using the task management system
+- Discuss key features and development process
+
