@@ -6,13 +6,13 @@ This repository contains a Personal Knowledge Management System (PKMS) with task
 
 The project consists of five distinct prototypes, each exploring different aspects of task management and development approaches:
 
-1. **tasks1** – Basic CLI Prototype (Core functionality)
-2. **tasks2** – Enhanced CLI with Tests (Feature expansion + testing)
-3. **tasks3** – Properly Packaged Version (Professional structure with uv)
-4. **tasks4** – AI Agent Experiment (OpenAI API integration)
-5. **tasks5** – Spec-Driven Development Prototype (Web UI + specification methodology)
+1. **task1** – Basic CLI Prototype (Core functionality)
+2. **task2** – Enhanced CLI with Tests (Feature expansion + testing)
+3. **task3** – Properly Packaged Version (Professional structure with uv)
+4. **task4** – AI Agent Experiment (OpenAI API integration)
+5. **task5** – Spec-Driven Development Prototype (Web UI + specification methodology)
 
-**Main Development Progression**: tasks1 → tasks2 → tasks3 represents the core terminal-based task management system that meets the assignment requirements.
+**Main Development Progression**: task1 → task2 → task3 represents the core terminal-based task management system that meets the assignment requirements.
 
 ---
 
@@ -20,14 +20,14 @@ The project consists of five distinct prototypes, each exploring different aspec
 
 **Purpose**: Initial proof-of-concept establishing core task management functionality.
 
-- **Folder**: `tasks1/`
+- **Folder**: `task1/`
 - **Files**: `task_manager.py`, `README.md`
 - **Storage**: `tasks.json` (auto-created when running)
 - **Features**: Add, list, search, update, delete tasks; filter by status/priority; basic statistics
 
 **Quick start:**
 ```bash
-cd tasks1
+cd task1
 python3 task_manager.py help
 python3 task_manager.py add "Buy groceries" "Get milk and bread" high
 python3 task_manager.py list
@@ -40,7 +40,7 @@ python3 task_manager.py stats
 
 **Purpose**: Expanded functionality with Notion-inspired features and comprehensive testing.
 
-- **Folder**: `tasks2/`
+- **Folder**: `task2/`
 - **Files**: `task_manager.py`, `test_task_manager.py`, `README.md`
 - **Features**: 
   - Tags and projects for organization
@@ -52,7 +52,7 @@ python3 task_manager.py stats
 
 **Quick start:**
 ```bash
-cd tasks2
+cd task2
 python3 task_manager.py help
 python3 task_manager.py add "Finish project" "Complete all tasks" high --tags "work,urgent" --project "CSC299" --due tomorrow
 python3 task_manager.py list --overdue
@@ -83,14 +83,14 @@ python3 task_manager.py tags
 
 **Purpose**: Professional project structure using modern Python tooling (uv).
 
-- **Folder**: `tasks3/`
+- **Folder**: `task3/`
 - **Structure**: Proper Python package with `pyproject.toml`
 - **Features**: Same as tasks2, but packaged for distribution
 - **Testing**: Full pytest test suite included
 
 **Quick start:**
 ```bash
-cd tasks3
+cd task3
 uv run tasks3  # Run the application
 uv run pytest  # Run tests
 ```
@@ -103,14 +103,14 @@ uv run pytest  # Run tests
 
 **Purpose**: Exploration of AI integration for task management using OpenAI API.
 
-- **Folder**: `tasks4/`
+- **Folder**: `task4/`
 - **Features**: AI-powered task summarization (paragraph → short phrase)
 - **Technology**: OpenAI Chat Completions API (GPT-3.5-turbo)
 - **Use Case**: Demonstrates how AI agents can enhance task management
 
 **Quick start:**
 ```bash
-cd tasks4
+cd task4
 export OPENAI_API_KEY='your-api-key-here'
 uv run tasks4
 ```
@@ -123,7 +123,7 @@ uv run tasks4
 
 **Purpose**: Alternative development methodology using specification-first design.
 
-- **Folder**: `tasks5/`
+- **Folder**: `task5/`
 - **Type**: Web-based task manager (HTML/CSS/JavaScript)
 - **Methodology**: Built using GitHub Spec Kit (spec-driven development)
 - **Features**: Full-featured web UI with localStorage persistence
@@ -131,7 +131,7 @@ uv run tasks4
 
 **Quick start:**
 ```bash
-cd tasks5
+cd task5
 # Open index.html in a web browser, or use a local server:
 python3 -m http.server 8000
 # Then open http://localhost:8000
@@ -145,23 +145,23 @@ python3 -m http.server 8000
 
 ```
 .
-├── tasks1/                    # Basic CLI prototype
+├── task1/                     # Basic CLI prototype
 │   ├── README.md
 │   └── task_manager.py
-├── tasks2/                    # Enhanced CLI with tests
+├── task2/                     # Enhanced CLI with tests
 │   ├── README.md
 │   ├── task_manager.py
 │   └── test_task_manager.py
-├── tasks3/                    # Packaged version (uv)
+├── task3/                     # Packaged version (uv)
 │   ├── README.md
 │   ├── pyproject.toml
 │   ├── src/tasks3/
 │   └── tests/
-├── tasks4/                    # AI agent experiment
+├── task4/                     # AI agent experiment
 │   ├── README.md
 │   ├── pyproject.toml
 │   └── src/tasks4/
-├── tasks5/                    # Spec-driven web prototype
+├── task5/                     # Spec-driven web prototype
 │   ├── README.md
 │   ├── index.html
 │   ├── *.js, *.css

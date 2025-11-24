@@ -32,7 +32,7 @@ The typical workflow involved:
 
 ## Prototype Evolution: Tasks 1-5
 
-### Task 1: Basic CLI Prototype
+### Task 1 (task1): Basic CLI Prototype
 
 **Approach**: Started with a minimal viable product to establish core functionality.
 
@@ -53,7 +53,7 @@ The typical workflow involved:
 - Basic error handling and validation were essential from the start
 - Clear command structure made the tool immediately usable
 
-### Task 2: Enhanced CLI with Tests
+### Task 2 (task2): Enhanced CLI with Tests
 
 **Approach**: Expanded functionality while introducing test-driven development practices.
 
@@ -80,7 +80,7 @@ The typical workflow involved:
 - Managing complex filtering logic across multiple dimensions
 - Ensuring backward compatibility with existing task data
 
-### Task 3: Proper Packaging with uv
+### Task 3 (task3): Proper Packaging with uv
 
 **Approach**: Professionalized the project structure using modern Python tooling.
 
@@ -101,7 +101,7 @@ The typical workflow involved:
 - Migrated existing code into the new package structure
 - Verified all tests still passed after restructuring
 
-### Task 4: AI Agent Experiment
+### Task 4 (task4): AI Agent Experiment
 
 **Approach**: Explored AI integration as a core feature of the task management system.
 
@@ -128,7 +128,7 @@ The typical workflow involved:
 - Proper prompt engineering is crucial for consistent results
 - Isolating AI experiments allows safe exploration of new capabilities
 
-### Task 5: Spec-Driven Development Prototype
+### Task 5 (task5): Spec-Driven Development Prototype
 
 **Approach**: Explored an alternative development methodology using specification-first design.
 
@@ -184,12 +184,12 @@ The typical workflow involved:
 
 ### Prototyping Strategy
 
-The decision to create multiple prototypes (tasks1-5) proved valuable. Each prototype served a different purpose:
-- **tasks1**: Proof of concept and core functionality
-- **tasks2**: Feature expansion and testing introduction
-- **tasks3**: Professional packaging and structure
-- **tasks4**: AI integration exploration
-- **tasks5**: Alternative methodology and interface exploration
+The decision to create multiple prototypes (task1-5) proved valuable. Each prototype served a different purpose:
+- **task1**: Proof of concept and core functionality
+- **task2**: Feature expansion and testing introduction
+- **task3**: Professional packaging and structure
+- **task4**: AI integration exploration
+- **task5**: Alternative methodology and interface exploration
 
 This approach allowed for experimentation without breaking existing work.
 
@@ -202,26 +202,26 @@ Different AI tools served different purposes:
 
 ### Testing Philosophy
 
-Started without tests (tasks1), then added tests incrementally (tasks2/3). This pragmatic approach worked well - getting something working first, then adding tests to ensure quality.
+Started without tests (task1), then added tests incrementally (task2/3). This pragmatic approach worked well - getting something working first, then adding tests to ensure quality.
 
 ### Specification vs Iteration
 
 Tried both approaches:
-- **Iterative (tasks1-3)**: Faster, more flexible, allowed rapid exploration
-- **Spec-driven (tasks5)**: More thorough, better documentation, but slower
+- **Iterative (task1-3)**: Faster, more flexible, allowed rapid exploration
+- **Spec-driven (task5)**: More thorough, better documentation, but slower
 
 Both have value depending on project needs.
 
 ## Final Deliverable
 
 The final project consists of:
-- **tasks1**: Basic CLI prototype demonstrating core concepts
-- **tasks2**: Enhanced CLI with tests, representing the main development progression
-- **tasks3**: Properly packaged version suitable for distribution
-- **tasks4**: AI agent experiment showing integration possibilities
-- **tasks5**: Spec-driven development prototype exploring alternative methodologies
+- **task1**: Basic CLI prototype demonstrating core concepts
+- **task2**: Enhanced CLI with tests, representing the main development progression
+- **task3**: Properly packaged version suitable for distribution
+- **task4**: AI agent experiment showing integration possibilities
+- **task5**: Spec-driven development prototype exploring alternative methodologies
 
-The progression from tasks1 → tasks2 → tasks3 represents the main development path, with tasks4 and tasks5 as exploratory branches that informed the overall understanding of the problem space.
+The progression from task1 → task2 → task3 represents the main development path, with task4 and task5 as exploratory branches that informed the overall understanding of the problem space.
 
 ## Conclusion
 
