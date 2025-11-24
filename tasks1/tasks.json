@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "title": "Buy groceries",
+    "description": "Get milk and bread",
+    "priority": "high",
+    "status": "pending",
+    "created_at": "2025-11-23T20:47:33.913513",
+    "updated_at": "2025-11-23T20:47:33.913518"
+  },
+  {
+    "id": 2,
+    "title": "Buy groceries",
+    "description": "Get milk and bread",
+    "priority": "high",
+    "status": "pending",
+    "created_at": "2025-11-23T20:53:06.085177",
+    "updated_at": "2025-11-23T20:53:06.085181"
+  }
+]

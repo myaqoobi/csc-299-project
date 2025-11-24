@@ -203,7 +203,7 @@ def execute_command(tokens: List[str], tm: TaskManager) -> None:
 
         try:
             task_ids = [
-                int(id_.strip()) for id_. in parsed["positional"][0].split(",")
+                int(id_.strip()) for id_ in parsed["positional"][0].split(",")
             ]
         except ValueError:
             print("Error: Task IDs must be numbers.")
@@ -220,7 +220,7 @@ def execute_command(tokens: List[str], tm: TaskManager) -> None:
 
         try:
             task_ids = [
-                int(id_.strip()) for id_. in parsed["positional"][0].split(",")
+                int(id_.strip()) for id_ in parsed["positional"][0].split(",")
             ]
         except ValueError:
             print("Error: Task IDs must be numbers.")

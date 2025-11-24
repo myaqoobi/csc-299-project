@@ -1,0 +1,145 @@
+[
+  {
+    "id": 1,
+    "title": "Finish CSC299 project",
+    "description": "Complete final project and video",
+    "priority": "high",
+    "status": "in_progress",
+    "tags": [
+      "school",
+      "urgent"
+    ],
+    "project": "CSC299",
+    "due_date": "2025-11-24",
+    "created_at": "2025-11-23T18:43:09.834032",
+    "updated_at": "2025-11-23T20:47:59.265219",
+    "completed_at": null
+  },
+  {
+    "id": 2,
+    "title": "Finish CSC299 project",
+    "description": "Complete final project and video",
+    "priority": "high",
+    "status": "pending",
+    "tags": [
+      "school",
+      "urgent"
+    ],
+    "project": "CSC299",
+    "due_date": "2025-11-24",
+    "created_at": "2025-11-23T19:05:16.408417",
+    "updated_at": "2025-11-23T19:05:16.408419",
+    "completed_at": null
+  },
+  {
+    "id": 3,
+    "title": "Clean room",
+    "description": "Tidy desk and organize cables",
+    "priority": "low",
+    "status": "pending",
+    "tags": [
+      "home",
+      "chores"
+    ],
+    "project": "Personal",
+    "due_date": "2025-11-30",
+    "created_at": "2025-11-23T19:05:40.073294",
+    "updated_at": "2025-11-23T19:05:40.073297",
+    "completed_at": null
+  },
+  {
+    "id": 4,
+    "title": "Finish CSC299 project",
+    "description": "Complete final project and video",
+    "priority": "high",
+    "status": "pending",
+    "tags": [
+      "school",
+      "urgent"
+    ],
+    "project": "CSC299",
+    "due_date": "2025-11-24",
+    "created_at": "2025-11-23T20:32:50.121695",
+    "updated_at": "2025-11-23T20:32:50.121697",
+    "completed_at": null
+  },
+  {
+    "id": 5,
+    "title": "Finish CSC299 project",
+    "description": "Complete final project and video",
+    "priority": "high",
+    "status": "pending",
+    "tags": [
+      "school",
+      "urgent"
+    ],
+    "project": "CSC299",
+    "due_date": "2025-11-24",
+    "created_at": "2025-11-23T20:33:13.170356",
+    "updated_at": "2025-11-23T20:33:13.170359",
+    "completed_at": null
+  },
+  {
+    "id": 6,
+    "title": "Finish CSC299 project",
+    "description": "Complete final project and video",
+    "priority": "high",
+    "status": "pending",
+    "tags": [
+      "school",
+      "urgent"
+    ],
+    "project": "CSC299",
+    "due_date": "2025-11-24",
+    "created_at": "2025-11-23T20:47:46.043754",
+    "updated_at": "2025-11-23T20:47:46.043756",
+    "completed_at": null
+  },
+  {
+    "id": 7,
+    "title": "Study for exam",
+    "description": "Review notes and past exams",
+    "priority": "medium",
+    "status": "pending",
+    "tags": [
+      "school"
+    ],
+    "project": "CSC299",
+    "due_date": "2025-11-26",
+    "created_at": "2025-11-23T20:47:48.110203",
+    "updated_at": "2025-11-23T20:47:48.110205",
+    "completed_at": null
+  },
+  {
+    "id": 8,
+    "title": "Clean room",
+    "description": "Tidy desk and organize cables",
+    "priority": "low",
+    "status": "pending",
+    "tags": [
+      "home",
+      "chores"
+    ],
+    "project": "Personal",
+    "due_date": "2025-11-30",
+    "created_at": "2025-11-23T20:47:50.455008",
+    "updated_at": "2025-11-23T20:47:50.455011",
+    "completed_at": null
+  },
+  {
+    "id": 9,
+    "title": "Clean room",
+    "description": "Tidy desk and organize cables",
+    "priority": "low",
+    "status": "pending",
+    "tags": [
+      "home",
+      "chores"
+    ],
+    "project": "Personal",
+    "due_date": "2025-11-30",
+    "created_at": "2025-11-23T20:55:07.092257",
+    "updated_at": "2025-11-23T20:55:07.092260",
+    "completed_at": null
+  }
+]
